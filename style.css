@@ -4,25 +4,24 @@
 @tailwind utilities;
 
 body {
-    @apply text-3xl; /* Sane defaults that you hopefully don't need to change */
+  @apply text-3xl; /* Sane defaults that you hopefully don't need to change */
+  font-family: 'Product Sans';
 }
 
 .app {
-    @apply grid h-screen; /* Sane defaults that you hopefully don't need to change */
-    background-color: #302C2C;  /* Background colour of the whole site */
+  @apply grid h-screen; /* Sane defaults that you hopefully don't need to change */
 }
 
 main {
-    @apply flex flex-col gap-[20px] items-center w-full place-self-center; /* Sane defaults that you hopefully don't need to change */
+  @apply flex flex-col gap-[20px] items-center w-full place-self-center; /* Sane defaults that you hopefully don't need to change */
 }
 
 .entry {
-    @apply border w-full flex flex-row items-center; /* Sane defaults that you hopefully don't need to change */
-    background-color: #BEBABA;  /* Background colour of each entry */
-    max-width: 350px;           /* Width of each entry (at max size) */
-    height: 80px;               /* Height of each link entry */
-    gap: 20px;                  /* Gap between the icon and the text */
-    padding: 20px;              /* Padding around the icon and text */
-    color: black;               /* The colour of the text */
-    border-radius: 5px;         /* The roundness of the corners */
+  @apply border w-full flex flex-row items-center; /* Sane defaults that you hopefully don't need to change */
+  max-width: 350px; /* Width of each entry (at max size) */
+  height: 80px; /* Height of each link entry */
+  gap: 30px; /* Gap between the icon and the text */
+  padding: 20px; /* Padding around the icon and text */
+  color: black; /* The colour of the text */
+  border-radius: 5px; /* The roundness of the corners */
 }

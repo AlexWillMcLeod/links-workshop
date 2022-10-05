@@ -1,16 +1,34 @@
 export type LinkEntryProps = {
-  name: string,
-  link: string,
-  icon?: string,
-}
+  name: string;
+  link: string;
+  icon?: string;
+};
 
-const LinkEntry = ({name, link, icon}: LinkEntryProps) => (
-    <a href={link} className="entry">
-        {icon && <i className={icon}/>}
-        <span>
-          {name}
-        </span>
-    </a>
-)
+import { Card, Container } from '@nextui-org/react';
+import Link from 'next/link';
 
-export default LinkEntry
+const LinkEntry = ({ name, link, icon }: LinkEntryProps) => (
+  <Container xs>
+    <Card isPressable>
+      <Card.Body>
+        <Link
+          href={link}
+          className="entry"
+        >
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              gap: '1rem',
+            }}
+          >
+            {name}
+            {icon && <i className={icon} />}
+          </div>
+        </Link>
+      </Card.Body>
+    </Card>
+  </Container>
+);
+
+export default LinkEntry;
