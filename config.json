@@ -1,24 +1,24 @@
 {
-  "name": "John Smith",
+  "name": "Alex McLeod",
   "links": [
     {
       "name": "Website",
-      "link": "https://gdsc.nz",
+      "link": "https://www.alexwillmcleod.comm",
       "icon": "fa fa-globe"
     },
     {
       "name": "Email",
-      "link": "mailto:hello@gdsc.nz",
+      "link": "mailto:alexwillmcleod@gmail.com",
       "icon": "fa-regular fa-envelope"
     },
     {
       "name": "GitHub",
-      "link": "https://github.com",
+      "link": "https://github.com/alexwillmcleod",
       "icon": "fa-brands fa-github"
     },
     {
       "name": "LinkedIn",
-      "link": "https://linkedin.com",
+      "link": "https://www.linkedin.com/in/alex-mcleod-21847b210/",
       "icon": "fa-brands fa-linkedin"
     }
   ]
