@@ -4,8 +4,11 @@ import LinkEntry from '../components/LinkEntry';
 // @ts-ignore
 import { links, name } from '/config.json';
 import { Avatar, Text, Card, Container } from '@nextui-org/react';
+import Confetti from 'react-confetti';
 
 const Home: NextPage = () => {
+  const { width, height } = useWindowSize();
+
   return (
     <div
       className="app"
@@ -14,10 +17,18 @@ const Home: NextPage = () => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        background:
+          'radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #E5EBEE 30%, #D7DEE3 60%, #F5F7F9 100%)',
       }}
     >
+      <Confetti />
       <Container xs>
-        <Card>
+        <Card
+          css={{
+            padding: '2rem',
+            border: 'black',
+          }}
+        >
           <Card.Body>
             <Head>
               <title>My Links</title>

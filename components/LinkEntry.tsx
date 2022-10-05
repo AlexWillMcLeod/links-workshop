@@ -9,7 +9,10 @@ import Link from 'next/link';
 
 const LinkEntry = ({ name, link, icon }: LinkEntryProps) => (
   <Container xs>
-    <Card isPressable>
+    <Card
+      isPressable
+      isHoverable
+    >
       <Card.Body>
         <Link
           href={link}

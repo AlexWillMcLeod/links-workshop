@@ -7,6 +7,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     // 2. Use at the root of your app
     <NextUIProvider>
+      <link
+        rel="stylesheet"
+        href="https://egkoppel.github.io/product-sans/google-fonts.css"
+      ></link>
       <Component {...pageProps} />
     </NextUIProvider>
   );
