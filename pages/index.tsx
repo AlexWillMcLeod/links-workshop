@@ -7,8 +7,6 @@ import { Avatar, Text, Card, Container } from '@nextui-org/react';
 import Confetti from 'react-confetti';
 
 const Home: NextPage = () => {
-  const { width, height } = useWindowSize();
-
   return (
     <div
       className="app"
